@@ -1,0 +1,17 @@
+{
+  "name": "repla",
+  "version": "1.0.0",
+  "description": "Repl on you local",
+  "main": "index.js",
+  "repository": "http://github.com/kentork/repla",
+  "author": "kentork <4198504+kentork@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dockerode": "^2.5.3",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Python 3.6.3",
+  "aceCode": "python",
+  "required": {
+    "command": "yarn global add <<packages>>",
+    "regex": ["require\\(['\"]([^'\"]+)['\"]\\)"]
+  },
+  "container": {
+    "image": "python:3.6.3-alpine",
+    "command": "python -c \"<<code>>\"",
+    "cache": "./node_modules"
+  }
+}

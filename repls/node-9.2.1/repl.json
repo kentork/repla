@@ -1,0 +1,13 @@
+{
+  "name": "Node 9.2.1",
+  "aceCode": "javascript",
+  "required": {
+    "command": "yarn global add <<packages>>",
+    "regex": ["require\\(['\"]([^'\"]+)['\"]\\)"]
+  },
+  "container": {
+    "image": "node:9.2.1-alpine",
+    "command": "node -e \"<<code>>\"",
+    "cache": "./node_modules"
+  }
+}

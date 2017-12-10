@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Repla</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <app></app>
+
+  <script src="app.tag" type="riot/tag"></script>
+  <script src="selector.tag" type="riot/tag"></script>
+  <script src="editor.tag" type="riot/tag"></script>
+  <script src="output.tag" type="riot/tag"></script>
+  <script src="https://rawgit.com/riot/riot/master/riot%2Bcompiler.min.js"></script>
+
+  <script>
+    riot.mount('app')
+  </script>
+
+</body>
+
+</html>
