@@ -8,8 +8,11 @@ Repl on you local
 # build
 docker build -t repla .
 
-# run server localhost:7070
+# attach container
 docker run -it -p "7070:7070" -v "/var/run/docker.sock:/var/run/docker.sock" -v "${pwd}:/src" repla /bin/sh
+
+# run server localhost:7070
+docker run -d -p "7070:7070" -v "/var/run/docker.sock:/var/run/docker.sock" -v "${pwd}:/src" repla /bin/sh -c "node index.js"
 ```
 
 # License
